@@ -5,32 +5,36 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import ArrowRight from '../../assets/icons/arrow-right.png'
 import LogoImg from '../../assets/Logo.png'
+import LayoutBase from '../Components/LayoutBase';
 
 const Home = () => {
-  
+  const navigation = useNavigation();
+
+  function NavigateToBluetoothPage (){
+    navigation.navigate('Bluetooth')
+  }
+
   return (
-    <View style={styles.container}>
+    <LayoutBase>
       <View style={styles.viewBase}/>
       <View style={styles.viewLogo}>
         <Image source={LogoImg} style={{}}/>
       </View>
       <View style={styles.viewBase}/>
       <View style={styles.viewButton}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={NavigateToBluetoothPage}>
           <Image source={ArrowRight} />
         </TouchableOpacity>
       </View>
-    </View>
+    </LayoutBase>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
   viewBase: {
     flex: 1
   },
