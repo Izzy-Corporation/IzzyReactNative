@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import HomeScreen from './Home'
 import BluetoothConnect from './BuetoothConnect';
+import ControlPainel from './ControlPainel'
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +17,7 @@ function Routes() {
       >
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Bluetooth" component={BluetoothConnect} />
+        <Stack.Screen name="Control" component={ControlPainel} />
       </Stack.Navigator>
     </NavigationContainer>
   );
