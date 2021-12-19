@@ -74,3 +74,10 @@
    - Submit your changes:
    $ git push origin main
    ```
+---
+
+<h2 align="center">License 📝</h2>
+
+<p align="center">
+   Este repositório está sob licença do MIT. Você pode ver o <a href="https://github.com/Izzy-Corporation/IzzyReactNative/blob/main/LICENSE.md">LICENSE</a> para mais detalhes. 😉
+</p>
